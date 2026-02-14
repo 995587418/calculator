@@ -1,0 +1,88 @@
+/* Reset all margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up basic body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Calculator container */
+  .calculator {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Display area for the calculator */
+  .display {
+    height: 80px;
+    background-color: #222;
+    color: white;
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: right;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+  
+  /* Buttons grid layout */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Operator buttons styling */
+  button.operator {
+    background-color: #f98b88;
+  }
+  
+  button.operator:hover {
+    background-color: #f76b5a;
+  }
+  
+  /* Responsive design for small screens */
+  @media screen and (max-width: 600px) {
+    .calculator {
+      width: 90%;
+    }
+  
+    .display {
+      font-size: 2em;
+    }
+  
+    button {
+      font-size: 1.2em;
+      padding: 15px;
+    }
+  }
+  
